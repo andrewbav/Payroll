@@ -40,24 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddEmployeeTransaction.cs" />
+    <Compile Include="Employee\AddEmployeeTransaction.cs" />
     <Compile Include="Comissioned\AddComissionedEmployee.cs" />
     <Compile Include="Comissioned\BiweeklySchedule.cs" />
     <Compile Include="Comissioned\CommissionedClassification.cs" />
+    <Compile Include="Employee\DeleteEmployeeTransaction.cs" />
     <Compile Include="Hourly\AddHourlyEmployee.cs" />
     <Compile Include="Affilation.cs" />
-    <Compile Include="Employee.cs" />
+    <Compile Include="Employee\Employee.cs" />
     <Compile Include="HoldMethod.cs" />
     <Compile Include="Hourly\HourlyClassification.cs" />
     <Compile Include="Hourly\HourlySchedule.cs" />
     <Compile Include="Salaried\MontlySchedule.cs" />
-    <Compile Include="PaymentClassification.cs" />
-    <Compile Include="PaymentMethod.cs" />
-    <Compile Include="PaymentSchedule.cs" />
+    <Compile Include="Payment бла-бла-бла\PaymentClassification.cs" />
+    <Compile Include="Payment бла-бла-бла\PaymentMethod.cs" />
+    <Compile Include="Payment бла-бла-бла\PaymentSchedule.cs" />
     <Compile Include="PayrollDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Salaried\AddSalariedEmployee.cs" />
     <Compile Include="Salaried\SalariedClassification.cs" />
+    <Compile Include="SalesReceipt\SalesReceipt.cs" />
+    <Compile Include="SalesReceipt\SalesReceiptTransaction.cs" />
+    <Compile Include="Timecard\TimeCard.cs" />
+    <Compile Include="Timecard\TimeCardTransaction.cs" />
     <Compile Include="Transaction.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
