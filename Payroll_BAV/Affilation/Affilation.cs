@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    public interface Affilation
+    interface Affilation
     {
     }
 }

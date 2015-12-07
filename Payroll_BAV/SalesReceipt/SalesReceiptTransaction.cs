@@ -5,18 +5,11 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    public class SalesReceiptTransaction
+    class SalesReceiptTransaction
     {
         private readonly DateTime date;
         private readonly double amount;
         private readonly int empId;
-
-        public SalesReceiptTransaction(DateTime date, double amount, int empId)
-        {
-            this.date = date;
-            this.amount = amount;
-            this.empId = empId;
-        }
 
         public void Execute()
         {

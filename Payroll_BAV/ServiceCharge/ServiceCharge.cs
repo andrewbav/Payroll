@@ -5,17 +5,17 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    public class ServiceCharge
+    class ServiceCharge
     {
         private readonly DateTime date;
-        private readonly double charge;
+        private readonly double hours;
 
-        public ServiceCharge(DateTime date, double charge)
+        public ServiceCharge(DateTime date, double hours)
         {
             this.date = date;
-            this.charge = charge;
+            this.hours = hours;
         }
-        public double Charge { get { return charge; } }
+        public double Hours { get { return hours; } }
         public DateTime Date { get { return date; } }
     }
 }

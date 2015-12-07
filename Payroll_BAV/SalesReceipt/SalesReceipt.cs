@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    public class SalesReceipt
+    class SalesReceipt
     {
         private readonly DateTime date;
         private readonly double amount;
