@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    public class Affilation
+    class NoAffilation : Affilation
     {
     }
 }

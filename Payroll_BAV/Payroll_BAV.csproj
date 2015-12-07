@@ -40,17 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Affilation\Affilation.cs" />
     <Compile Include="Employee\AddEmployeeTransaction.cs" />
     <Compile Include="Comissioned\AddComissionedEmployee.cs" />
     <Compile Include="Comissioned\BiweeklySchedule.cs" />
     <Compile Include="Comissioned\CommissionedClassification.cs" />
     <Compile Include="Employee\DeleteEmployeeTransaction.cs" />
     <Compile Include="Hourly\AddHourlyEmployee.cs" />
-    <Compile Include="Affilation.cs" />
     <Compile Include="Employee\Employee.cs" />
     <Compile Include="HoldMethod.cs" />
     <Compile Include="Hourly\HourlyClassification.cs" />
     <Compile Include="Hourly\HourlySchedule.cs" />
+    <Compile Include="Affilation\NoAffilation.cs" />
     <Compile Include="Salaried\MontlySchedule.cs" />
     <Compile Include="Payment бла-бла-бла\PaymentClassification.cs" />
     <Compile Include="Payment бла-бла-бла\PaymentMethod.cs" />
@@ -61,9 +62,12 @@
     <Compile Include="Salaried\SalariedClassification.cs" />
     <Compile Include="SalesReceipt\SalesReceipt.cs" />
     <Compile Include="SalesReceipt\SalesReceiptTransaction.cs" />
+    <Compile Include="ServiceCharge\ServiceCharge.cs" />
+    <Compile Include="ServiceCharge\ServiceChargeTransaction.cs" />
     <Compile Include="Timecard\TimeCard.cs" />
     <Compile Include="Timecard\TimeCardTransaction.cs" />
     <Compile Include="Transaction.cs" />
+    <Compile Include="Affilation\UnionAffilation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
