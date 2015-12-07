@@ -18,7 +18,7 @@ namespace Payroll_BAV
             this.charge = charge;
         }
         public UnionAffilation() : this(-1, 0.0) { }
-        public ServiceCharge GetServiceCharge(DateTime date) { return charges[date] as ServiceCharge }
+        public ServiceCharge GetServiceCharge(DateTime date) { return charges[date] as ServiceCharge; }
         public void AddServiceCharge(ServiceCharge sc) { charges[sc.Date] = sc; }
         public double Charge { get { return charge; } }
         public int MemberId { get { return memberId; } }
