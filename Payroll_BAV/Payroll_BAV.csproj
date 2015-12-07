@@ -53,9 +53,9 @@
     <Compile Include="Hourly\HourlySchedule.cs" />
     <Compile Include="Affilation\NoAffilation.cs" />
     <Compile Include="Salaried\MontlySchedule.cs" />
-    <Compile Include="Payment бла-бла-бла\PaymentClassification.cs" />
-    <Compile Include="Payment бла-бла-бла\PaymentMethod.cs" />
-    <Compile Include="Payment бла-бла-бла\PaymentSchedule.cs" />
+    <Compile Include="Payment\PaymentClassification.cs" />
+    <Compile Include="Payment\PaymentMethod.cs" />
+    <Compile Include="Payment\PaymentSchedule.cs" />
     <Compile Include="PayrollDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Salaried\AddSalariedEmployee.cs" />
@@ -68,6 +68,9 @@
     <Compile Include="Timecard\TimeCardTransaction.cs" />
     <Compile Include="Transaction.cs" />
     <Compile Include="Affilation\UnionAffilation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

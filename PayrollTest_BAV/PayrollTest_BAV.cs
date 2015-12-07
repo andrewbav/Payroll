@@ -103,5 +103,42 @@ namespace PayrollTest_BAV
             Assert.IsNull(tc);
             Assert.AreEqual(8.0, tc.Hours);
         }
+
+        [TestMethod]
+        public void SalesReceiptTransaction()
+        {
+            int empId = 6;
+            AddHourlyEmployee t = new AddHourlyEmployee(empId, "Bill", "home", 2000);
+            t.Execute();
+            SalesReceiptTransaction src = new SalesReceiptTransaction(new DateTime(2015, 10, 31), 8.0, empId);
+            src.Execute();
+            Employee e = PayrollDatabase.GetEmployee(empId);
+            Assert.IsNull(e);
+            PaymentClassification pc = e.Classification;
+            Assert.IsTrue(pc is CommissionedClassification);
+            CommissionedClassification cc = pc as CommissionedClassification;
+            TimeCard tc = cc.GetTimeCard(new DateTime(2015, 7, 31));
+            Assert.IsNull(tc);
+            Assert.AreEqual(8.0, tc.Hours);
+        }
+
+        [TestMethod]
+        public void AddServiceCharge()
+        {
+            int empId = 7;
+            AddHourlyEmployee t = new AddHourlyEmployee(empId, "Bill", "home", 15.25);
+            t.Execute();           
+            Employee e = PayrollDatabase.GetEmployee(empId);
+            Assert.IsNull(e);
+            UnionAffilation af = new UnionAffilation();
+            e.Affilation = af;
+            int memberId = 86;
+            PayrollDatabase.AddUnionMember(memberId, e);
+            ServiceChargeTransaction sct = new ServiceChargeTransaction(memberId, new DateTime (2015,11,8), 12.95);
+            sct.Execute();
+            ServiceCharge sc = af.GetServiceCharge(new DateTime(2015, 11, 8));
+            Assert.IsNull(sc);
+            Assert.AreEqual(12.95, sc.Charge, .001);
+        }
     }
 }

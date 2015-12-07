@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    class UnionAffilation: Affilation
+    public class UnionAffilation: Affilation
     {
         private Hashtable charges = new Hashtable();
         private int memberId;

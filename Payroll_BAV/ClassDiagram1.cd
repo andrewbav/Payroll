@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Payroll_BAV.NoAffilation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Affilation\NoAffilation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Payroll_BAV.UnionAffilation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAABAAAAAQAAAABAAAAAQAAAAAAEAAAAAAAAAACAAA=</HashCode>
+      <FileName>Affilation\UnionAffilation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Payroll_BAV.AddComissionedEmployee" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAQAAAgAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Comissioned\AddComissionedEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.BiweeklySchedule" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Comissioned\BiweeklySchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.CommissionedClassification" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAACAQACAgQAAEAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Comissioned\CommissionedClassification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.AddEmployeeTransaction" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAQEAAAABCAAAAIEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee\AddEmployeeTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.DeleteEmployeeTransaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee\DeleteEmployeeTransaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Payroll_BAV.Employee" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAABCAEAAQgACQAAEIEAABCAAAAAAAAAAA=</HashCode>
+      <FileName>Employee\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.HoldMethod" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HoldMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.AddHourlyEmployee" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hourly\AddHourlyEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.HourlyClassification" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAACAAQAAEAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hourly\HourlyClassification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.HourlySchedule" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hourly\HourlySchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.PaymentClassification" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Payment\PaymentClassification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.PaymentMethod" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Payment\PaymentMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.PaymentSchedule" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Payment\PaymentSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.PayrollDatabase" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgEAAAAIAoAAAAAAIAAAAEAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>PayrollDatabase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.AddSalariedEmployee" Collapsed="true">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAgAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Salaried\AddSalariedEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.MontlySchedule" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Salaried\MontlySchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.SalariedClassification" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Salaried\SalariedClassification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.SalesReceipt" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAgAABAAAAAQAAAAA=</HashCode>
+      <FileName>SalesReceipt\SalesReceipt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.SalesReceiptTransaction" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAIAAAAAAAAAAAgAAAAAAAAQAAAAA=</HashCode>
+      <FileName>SalesReceipt\SalesReceiptTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.ServiceCharge" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAQAAAAAAAAAAAAAAAAAAABAAAAAQAAAAA=</HashCode>
+      <FileName>ServiceCharge\ServiceCharge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.ServiceChargeTransaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABBAAAAAAAAAQBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiceCharge\ServiceChargeTransaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Payroll_BAV.TimeCard" Collapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAQAAAAAAAAAAAAAAAAAAABAAAAAQAAAAA=</HashCode>
+      <FileName>Timecard\TimeCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Payroll_BAV.TimeCardTransaction" Collapsed="true">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAQAIAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Timecard\TimeCardTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Payroll_BAV.Affilation" Collapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Affilation\Affilation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Payroll_BAV.Transaction" Collapsed="true">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transaction.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
