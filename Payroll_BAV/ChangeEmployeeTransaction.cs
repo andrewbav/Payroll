@@ -18,6 +18,6 @@ namespace Payroll_BAV
             else
                 throw new InvalidOperationException("работник не найден");
         }
-        protected abstract 
+        protected abstract void Change(Employee e);
     }
 }
