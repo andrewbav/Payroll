@@ -28,7 +28,10 @@ namespace Payroll_BAV
             set { name = value; }
         }
 
-        public string Address { get { return address; } }
+        public string Address { 
+            get { return address; }
+            set { name = value; }
+        }
 
         public int EmpId { get { return empid; } }
 

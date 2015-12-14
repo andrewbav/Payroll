@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    class ChangeEmployeeTransaction
+    public abstract class ChangeEmployeeTransaction: Transaction
     {
         private readonly int empId;
 
