@@ -41,8 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Affilation\Affilation.cs" />
+    <Compile Include="Change\ChangeSalariedTransaction.cs" />
     <Compile Include="Change\ChangeAddressTransaction.cs" />
+    <Compile Include="Change\ChangeClassificationTransaction.cs" />
     <Compile Include="Change\ChangeEmployeeTransaction.cs" />
+    <Compile Include="Change\ChangeHourlyTransaction.cs" />
     <Compile Include="Change\ChangeNameTransaction.cs" />
     <Compile Include="Employee\AddEmployeeTransaction.cs" />
     <Compile Include="Comissioned\AddComissionedEmployee.cs" />

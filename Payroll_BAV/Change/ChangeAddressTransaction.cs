@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Payroll_BAV.Change
+namespace Payroll_BAV
 {
     public class ChangeAddressTransaction: ChangeEmployeeTransaction
     {
