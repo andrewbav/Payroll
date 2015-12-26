@@ -31,7 +31,7 @@ namespace Payroll_BAV
         public string Address 
         { 
             get { return address; }
-            set { name = value; }
+            set { address = value; }
         }
 
         public int EmpId { get { return empid; } }

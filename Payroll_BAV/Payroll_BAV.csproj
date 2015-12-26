@@ -41,13 +41,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Affilation\Affilation.cs" />
+    <Compile Include="Change\ChangeAffiliationTransaction.cs" />
     <Compile Include="Change\ChangeCommissionedTransaction.cs" />
+    <Compile Include="Change\ChangeDirectTransaction.cs" />
+    <Compile Include="Change\ChangeHoldTransaction.cs" />
+    <Compile Include="Change\ChangeMailTransaction.cs" />
+    <Compile Include="Change\ChangeMemberTransaction.cs" />
+    <Compile Include="Change\ChangeMethodTransaction.cs" />
     <Compile Include="Change\ChangeSalariedTransaction.cs" />
     <Compile Include="Change\ChangeAddressTransaction.cs" />
     <Compile Include="Change\ChangeClassificationTransaction.cs" />
     <Compile Include="Change\ChangeEmployeeTransaction.cs" />
     <Compile Include="Change\ChangeHourlyTransaction.cs" />
     <Compile Include="Change\ChangeNameTransaction.cs" />
+    <Compile Include="Change\ChangeUnaffiliatedTransaction.cs" />
+    <Compile Include="Method\DirectDepositMethod.cs" />
     <Compile Include="Employee\AddEmployeeTransaction.cs" />
     <Compile Include="Comissioned\AddComissionedEmployee.cs" />
     <Compile Include="Comissioned\BiweeklySchedule.cs" />
@@ -55,10 +63,11 @@
     <Compile Include="Employee\DeleteEmployeeTransaction.cs" />
     <Compile Include="Hourly\AddHourlyEmployee.cs" />
     <Compile Include="Employee\Employee.cs" />
-    <Compile Include="HoldMethod.cs" />
+    <Compile Include="Method\HoldMethod.cs" />
     <Compile Include="Hourly\HourlyClassification.cs" />
     <Compile Include="Hourly\HourlySchedule.cs" />
     <Compile Include="Affilation\NoAffilation.cs" />
+    <Compile Include="Method\MailMethod.cs" />
     <Compile Include="Salaried\MontlySchedule.cs" />
     <Compile Include="Payment бла-бла-бла\PaymentClassification.cs" />
     <Compile Include="Payment бла-бла-бла\PaymentMethod.cs" />

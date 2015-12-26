@@ -99,9 +99,9 @@ namespace PayrollTest_BAV
             PaymentClassification pc = e.Classification;
             Assert.IsTrue(pc is HourlyClassification);
             HourlyClassification hc = pc as HourlyClassification;
-            TimeCard tc = hc.GetTimeCard(new DateTime(2015,7,31)); //считает, что не существует
-            //Assert.IsNotNull(tc);
-            //Assert.AreEqual(8.0, tc.Hours);
+            TimeCard tc = hc.GetTimeCard(new DateTime(2015,10,31)); 
+            Assert.IsNotNull(tc);
+            Assert.AreEqual(8.0, tc.Hours);
         }
 
         [TestMethod]
@@ -123,7 +123,7 @@ namespace PayrollTest_BAV
             int empId = 7;
             AddSalariedEmployee t = new AddSalariedEmployee(empId, "Bill", "home", 2000);
             t.Execute();
-            ChangeAddressTransaction cat = new ChangeAddressTransaction(empId, "Office"); //не работает
+            ChangeAddressTransaction cat = new ChangeAddressTransaction(empId, "Office"); 
             cat.Execute();
             Employee e = PayrollDatabase.GetEmployee(empId);
             Assert.IsNotNull(e);
@@ -163,9 +163,78 @@ namespace PayrollTest_BAV
             Assert.IsNotNull(pc);
             Assert.IsTrue(pc is CommissionedClassification);
             CommissionedClassification cc = pc as CommissionedClassification;
-            Assert.AreEqual(200, 200, cc.Salary); //ошибка здесь
+            Assert.AreEqual(10, cc.CRate);
+            Assert.AreEqual(20.44, cc.Salary);
             PaymentSchedule ps = e.Schedule;
             Assert.IsTrue(ps is BiweeklySchedule);
+        }
+
+        [TestMethod]
+        public void TestDirectDepositMethod()
+        {
+            int empId = 10;
+            AddSalariedEmployee t = new AddSalariedEmployee(empId, "Bill", "home", 1000);
+            t.Execute();
+            ChangeDirectTransaction cdt = new ChangeDirectTransaction(empId, "Bank A", "123456789");
+            cdt.Execute();
+            Employee e = PayrollDatabase.GetEmployee(empId);
+            Assert.IsNotNull(e);
+            PaymentMethod pm = e.Method;
+            Assert.IsTrue(pm is DirectDepositMethod);
+            DirectDepositMethod ddm = pm as DirectDepositMethod;
+            Assert.AreEqual("Bank A", ddm.Bank);
+            Assert.AreEqual("123456789", ddm.Account);
+        }
+
+        [TestMethod]
+        public void ChangeMailMethod()
+        {
+            int empid = 11;
+            AddHourlyEmployee t = new AddHourlyEmployee(empid, "Bill", "home", 25);
+            t.Execute();
+            ChangeMailTransaction cmt = new ChangeMailTransaction(empid, "zbcdefg@hig.klm");
+            cmt.Execute();
+            Employee e = PayrollDatabase.GetEmployee(empid);
+            Assert.IsNotNull(e);
+            PaymentMethod pm = e.Method;
+            Assert.IsTrue(pm is MailMethod);
+            MailMethod mm = pm as MailMethod;
+            Assert.AreEqual("zbcdefg@hig.klm", mm.MailAddress);
+        }
+
+        [TestMethod]
+        public void ChangeHoldMethod()
+        {
+            int empid = 12;
+            AddHourlyEmployee t = new AddHourlyEmployee(empid, "Bill", "home", 25);
+            t.Execute();
+            ChangeHoldTransaction cht = new ChangeHoldTransaction(empid);
+            cht.Execute();
+            Employee e = PayrollDatabase.GetEmployee(empid);
+            Assert.IsNotNull(e);
+            PaymentMethod pm = e.Method;
+            Assert.IsTrue(pm is HoldMethod);
+        }
+
+        [TestMethod]
+        public void ChangeUnionMember()
+        {
+            int empid = 13;
+            AddHourlyEmployee t = new AddHourlyEmployee(empid, "Masha", "Forest", 256.1);
+            t.Execute();
+            int memberId = 7743;
+            ChangeMemberTransaction cmt = new ChangeMemberTransaction(empid, memberId, 99.42);
+            cmt.Execute();
+            Employee e = PayrollDatabase.GetEmployee(empid);
+            Assert.IsNotNull(e);
+            Affilation affiliation = e.Affilation;
+            Assert.IsNotNull(affiliation);
+            Assert.IsTrue(affiliation is UnionAffilation);
+            UnionAffilation uf = affiliation as UnionAffilation;
+            Assert.AreEqual(99.42, uf.Charge, .001);
+            Employee member = PayrollDatabase.GetUnionMember(memberId);
+            Assert.IsNotNull(member);
+            Assert.AreEqual(e, member);
         }
     }
 }
