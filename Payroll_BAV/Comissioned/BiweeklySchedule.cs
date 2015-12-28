@@ -7,6 +7,7 @@ namespace Payroll_BAV
 {
     public class BiweeklySchedule: PaymentSchedule
     {
+        public bool IsPayDate(DateTime date) { return date.DayOfWeek == DayOfWeek.Friday; }
         public override string ToString() { return "BiWeekly"; }
     }
 }

@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    public class PaymentMethod
+    public interface PaymentMethod
     {
+         void Pay(Paycheck paycheck);
     }
 }

@@ -68,6 +68,8 @@
     <Compile Include="Hourly\HourlySchedule.cs" />
     <Compile Include="Affilation\NoAffilation.cs" />
     <Compile Include="Method\MailMethod.cs" />
+    <Compile Include="Pay\Paycheck.cs" />
+    <Compile Include="Pay\PaydayTransaction.cs" />
     <Compile Include="Salaried\MontlySchedule.cs" />
     <Compile Include="Payment бла-бла-бла\PaymentClassification.cs" />
     <Compile Include="Payment бла-бла-бла\PaymentMethod.cs" />

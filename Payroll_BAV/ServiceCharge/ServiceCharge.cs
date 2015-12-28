@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    class ServiceCharge
+    public class ServiceCharge
     {
         private readonly DateTime date;
         private readonly double hours;

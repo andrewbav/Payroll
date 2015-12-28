@@ -7,5 +7,6 @@ namespace Payroll_BAV
 {
     public interface Affilation
     {
+        double CalculateDeductions(Paycheck paycheck);
     }
 }

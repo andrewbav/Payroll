@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    public class PaymentClassification
+    public abstract class PaymentClassification
     {
+        public abstract double CalculatePay(Paycheck paycheck);
     }
 }

@@ -15,11 +15,9 @@ namespace Payroll_BAV
             this.bank = bank;
             this.account = account;
         }
-
         public string Bank { get { return bank; } }
         public string Account { get { return account; } }
-
         public override string ToString() { return String.Format("Direct {0} {1}", bank, account); }
-
+        public void Pay(Paycheck paycheck) { }
     }
 }

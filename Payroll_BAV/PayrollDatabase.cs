@@ -17,5 +17,11 @@ namespace Payroll_BAV
         public static void DeleteUnionMember(int id) { UnionMembers.Remove(id); }
         public static Employee GetEmployee(int id) { return employees[id] as Employee; }
         public static Employee GetUnionMember(int id) { return UnionMembers[id] as Employee; }
+        public static ArrayList GetAllEmployeeIds()
+        {
+            ArrayList allEmplIds = new ArrayList();
+            allEmplIds.AddRange(employees.Keys);
+            return allEmplIds;
+        }
     }
 }

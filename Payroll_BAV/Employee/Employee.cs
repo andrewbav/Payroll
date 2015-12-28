@@ -8,12 +8,11 @@ namespace Payroll_BAV
     public class Employee
     {
         private readonly int empid;
-        private string name;
-        private string address;
+        private string name, address;
         private PaymentClassification classification;
         private PaymentSchedule schedule;
         private PaymentMethod method;
-        private Affilation affilation;
+        private Affilation affilation = new NoAffilation();
 
         public Employee(int empid, string name, string address) 
         {
@@ -59,6 +58,21 @@ namespace Payroll_BAV
             get { return affilation; }
             set { affilation = value; }
         }
+
+        public bool IsPayDate(DateTime date) { return schedule.IsPayDate(date); }
+
+        public void PayDay(Paycheck paycheck)
+        {
+            double grossPay = classification.CalculatePay(paycheck);
+            double deductions = affilation.CalculateDeductions(paycheck);
+            double netPay = grossPay - deductions;
+            paycheck.GrossPay = grossPay;
+            paycheck.Deductions = deductions;
+            paycheck.NetPay = netPay;
+            method.Pay(paycheck);
+        }
+
+        //public DateTime GetPayPeriodStartDate(DateTime date){ return schedule.GetPayPeriodStartDate(date); }
 
         public override string ToString()
         {

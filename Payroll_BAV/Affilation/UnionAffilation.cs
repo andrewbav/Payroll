@@ -20,6 +20,9 @@ namespace Payroll_BAV
         public UnionAffilation() : this(-1, 0.0) { }
         public ServiceCharge GetServiceCharge(DateTime date) { return charges[date] as ServiceCharge; }
         public void AddServiceCharge(ServiceCharge sc) { charges[sc.Date] = sc; }
+
+        public double CalculateDeductions(Paycheck paycheck) { return 0; }
+
         public double Charge { get { return charge; } }
         public int MemberId { get { return memberId; } }
 

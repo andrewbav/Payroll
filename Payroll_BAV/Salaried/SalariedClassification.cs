@@ -13,6 +13,8 @@ namespace Payroll_BAV
 
         public double Salary { get { return salary; } }
 
+        public override double CalculatePay(Paycheck paycheck) { return salary; }
+
         public override string ToString() { return String.Format("${0}", salary); }
     }
 }

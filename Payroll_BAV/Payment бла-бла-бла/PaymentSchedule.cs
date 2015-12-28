@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Payroll_BAV
 {
-    public class PaymentSchedule
+    public interface PaymentSchedule
     {
+        bool IsPayDate(DateTime date);
     }
 }

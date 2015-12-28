@@ -17,5 +17,6 @@ namespace Payroll_BAV
         public double CRate { get { return cRate; } }
         public double Salary { get { return salary; } }
         public override string ToString() { return String.Format("${0} ${1}", cRate, salary); }
+        public override double CalculatePay(Paycheck paycheck) { return 0; }
     }
 }

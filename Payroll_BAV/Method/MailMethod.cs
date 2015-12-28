@@ -11,6 +11,12 @@ namespace Payroll_BAV
 
         public MailMethod(string mailAddress) { this.mailAddress = mailAddress; }
         public string MailAddress { get { return mailAddress; } }
+
+        public void Pay(Paycheck paycheck)
+        {
+ 
+        }
+
         public override string ToString() { return String.Format("Mail {0}", mailAddress); }
     }
 }
